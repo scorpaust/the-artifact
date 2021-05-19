@@ -35,15 +35,14 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-	private void FixedUpdate()
+	void FixedUpdate()
 	{
-		
-	}
+        MovePlayer();
+    }
 
 	// Update is called once per frame
 	void Update()
     {
-        MovePlayer();
         FlipSprite();   
     }
 
@@ -72,9 +71,9 @@ public class PlayerMovement : MonoBehaviour
             if (moveVector.sqrMagnitude > 1)
             {
                 moveVector = moveVector.normalized;
-
-                myBody.velocity = new Vector2(moveVector.x * movementSpeed * Time.deltaTime, moveVector.y * movementSpeed * Time.deltaTime);
             }
+
+            myBody.velocity = new Vector2(moveVector.x * movementSpeed, moveVector.y * movementSpeed);
         }
     }
 }
