@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 1771194542}
   - component: {fileID: 1771194541}
   - component: {fileID: 1771194547}
+  - component: {fileID: 1771194548}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -377,9 +378,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771194540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ce82d448a9d0ae47b84fb50cea27f1e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -465,3 +466,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
+--- !u!114 &1771194548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771194540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8072430294bd54393326a3325b2837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animSprites:
+  - {fileID: 21300000, guid: 6e8428e258934b04ab8373cab96327f4, type: 3}
+  - {fileID: 21300000, guid: 82dff0dea91985c4fb0af44f99329983, type: 3}
+  - {fileID: 21300000, guid: d1ddbf806f923624a890ae46e75a09d7, type: 3}
+  - {fileID: 21300000, guid: 6e8428e258934b04ab8373cab96327f4, type: 3}
+  timeThreshold: 0.1
