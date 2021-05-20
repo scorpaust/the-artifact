@@ -17,28 +17,23 @@ public class BushFruits : MonoBehaviour
 
     private float timer;
 
-	private void Awake()
-	{
-        bushVisual = GetComponent<BushVisual>();
-
-        if (Random.Range(0, 2) == 0)
-		{
-            hasFruits = false;
-
-            timer = Time.time + respawnTime[(int)bushVisual.GetBushVariant()];
-		}
-        else
-		{
-            hasFruits = true;
-
-            bushVisual.ShowFruits();
-		}
-	}
-
 	// Start is called before the first frame update
 	void Start()
     {
-        
+        bushVisual = GetComponent<BushVisual>();
+
+        if (Random.Range(0, 2) == 0)
+        {
+            hasFruits = false;
+
+            timer = Time.time + respawnTime[(int)bushVisual.GetBushVariant()];
+        }
+        else
+        {
+            hasFruits = true;
+
+            bushVisual.ShowFruits();
+        }
     }
 
     // Update is called once per frame
