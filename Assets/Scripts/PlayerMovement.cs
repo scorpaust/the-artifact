@@ -76,4 +76,12 @@ public class PlayerMovement : MonoBehaviour
             myBody.velocity = new Vector2(moveVector.x * movementSpeed, moveVector.y * movementSpeed);
         }
     }
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Bush"))
+		{
+            Debug.Log("The value of fruits is: " + collision.gameObject.GetComponent<BushFruits>().HarvestFruit());
+		}
+	}
 }
