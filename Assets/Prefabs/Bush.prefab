@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3644030334300195394}
   - component: {fileID: 3644030334300195395}
+  - component: {fileID: 2154575020430799764}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -165,6 +166,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2154575020430799764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3644030334300195396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf34c7a42869e04abd5770e1eb02ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bushSprites:
+  - {fileID: 21300000, guid: bccf5691ef79a944598ec9ad5f0c60e1, type: 3}
+  - {fileID: 21300000, guid: 8493037421bf9784e8a0b8d1e1ea2110, type: 3}
+  - {fileID: 21300000, guid: 5b3c5db921a055a44bcc0283a718b0f7, type: 3}
+  fruitSprites:
+  - {fileID: 21300000, guid: e8e4135bfdb53d74d8630bf50c2fcef5, type: 3}
+  - {fileID: 21300000, guid: 695bd11414e079c4181fa4c4d4b81fb3, type: 3}
+  - {fileID: 21300000, guid: 1bbea70228f6be0418ccb2226d58c319, type: 3}
+  drySprites:
+  - {fileID: 21300000, guid: 81db0a11d015cc042b383a534851b250, type: 3}
+  - {fileID: 21300000, guid: b5a7ea66a63050e47bbcba1c84994f53, type: 3}
+  - {fileID: 21300000, guid: 72c2a1845d96c6f4e9ea8cf4d6c07fc5, type: 3}
+  fruitRenderers:
+  - {fileID: 3644030333840778527}
+  - {fileID: 3644030335461413162}
+  hideTimePerFruit: 0.2
 --- !u!1 &3644030335348332250
 GameObject:
   m_ObjectHideFlags: 0
