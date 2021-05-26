@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7895939874871407913}
   - component: {fileID: 7895939874871407918}
   - component: {fileID: 4978186507174396745}
+  - component: {fileID: 7857547469832361603}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -293,3 +294,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f19178aabfe4d49b7960a093bda00c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxNumberOfFruitsToStore: 50
+  currentNumberOfStoredFruits: 0
+--- !u!114 &7857547469832361603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7895939874871407926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c13cab2237fd6547ad58c696c743a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  harvestTime: 0.4

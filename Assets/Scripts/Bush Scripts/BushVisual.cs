@@ -36,7 +36,7 @@ public class BushVisual : MonoBehaviour
 		{
             fruitRenderers[i].sprite = fruitSprites[(int)bushVariant];
 
-            //fruitRenderers[i].enabled = false;
+            fruitRenderers[i].enabled = false;
 		}
 	}
 
@@ -76,15 +76,4 @@ public class BushVisual : MonoBehaviour
 		}
 	}
 
-	// Start is called before the first frame update
-	void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
