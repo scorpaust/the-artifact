@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bush
   - Artifact
+  - Wolf
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Bush
   - 
   - 
   - 
@@ -46,9 +47,12 @@ TagManager:
   - name: Bush
     uniqueID: 3448577773
     locked: 0
-  - name: Player
-    uniqueID: 3397499683
-    locked: 0
   - name: Artifact
     uniqueID: 1999043663
+    locked: 0
+  - name: Wolf
+    uniqueID: 91517965
+    locked: 0
+  - name: Player
+    uniqueID: 3397499683
     locked: 0
