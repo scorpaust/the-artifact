@@ -44,7 +44,7 @@ public class WolfAnim : MonoBehaviour
 		{
 			sr.sprite = wolfAnimSprites[0];
 		}
-		sr.flipX = wolfAI.Left;
+		sr.flipX = wolfAI.left;
 	}
 }
 
