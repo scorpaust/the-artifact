@@ -49,6 +49,8 @@ public class Artifact : MonoBehaviour
 		{
 			health = 0;
 
+			GameOverUIController.instance.GameOver("You Lose!");
+
 			Destroy(gameObject);
 		} 
 	}

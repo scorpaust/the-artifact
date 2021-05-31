@@ -12,6 +12,8 @@ public class PlayerSlash : MonoBehaviour
 
     private float timer;
 
+    private GameObject artifact;
+
     private AudioSource audioSource;
 
     private Camera mainCamera;
@@ -23,6 +25,8 @@ public class PlayerSlash : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         mainCamera = Camera.main;
+
+        artifact = GameObject.FindWithTag("Artifact");
 	}
 
 	private void Update()
@@ -31,14 +35,18 @@ public class PlayerSlash : MonoBehaviour
 		{
             Slash();
 
-            audioSource.Play();
-
             timer = Time.time + cooldown;
 		}
 	}
 
     private void Slash()
 	{
+
+        if (!artifact)
+            return;
+
+        audioSource.Play();
+
         spawnPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
 
         spawnPos.z = 0;

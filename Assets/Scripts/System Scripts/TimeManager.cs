@@ -40,6 +40,8 @@ public class TimeManager : MonoBehaviour
             gameOver = true;
 
             Destroy(artifact);
+
+            GameOverUIController.instance.GameOver("You Win!");
 		}
 
         DisplayTime((int)timeToWin);
